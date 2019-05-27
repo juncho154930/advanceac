@@ -6,8 +6,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var index = require('./routes/index');
 
 var app = express();
 
@@ -25,8 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //cors
 app.use(cors());
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', index);
 
 
 app.get('/todo', (req, res) => {
