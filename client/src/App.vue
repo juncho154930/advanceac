@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import OwnerService from './services/api.js';
+import OwnerService from '@/services/api';
 
 export default {
   name: 'App',
