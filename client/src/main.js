@@ -3,8 +3,11 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import Axios from 'axios';
 
 Vue.config.productionTip = false;
+
+Axios.defaults.baseURL = process.env.API_ENDPOINT;
 
 /* eslint-disable no-new */
 new Vue({

@@ -20,14 +20,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 //cors
 app.use(cors());
 
 app.use('/', index);
 
 
-app.get('/todo', (req, res) => {
+app.get('/app/todo', (req, res) => {
   res.send([
     'Thing 1',
     'Thing 2'
