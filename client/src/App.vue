@@ -16,7 +16,7 @@ export default {
     }).catch((error) => {
       console.log(error.response.data);
     });
-  }
+  },
 };
 </script>
 
