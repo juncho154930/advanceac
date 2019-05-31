@@ -25,6 +25,16 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'no-tabs': 'off',
+    'indent': 'off',
+    'no-console': 'off',
+    'no-trailing-spaces': 'off',
+    'eol-last': 'off',
+    'comma-dangle':'off',
+    'quotes': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'require-v-for-key': 'off',
+    'no-debugger': 'off',
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
