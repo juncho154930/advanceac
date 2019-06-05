@@ -125,8 +125,8 @@ export default {
 	  position:absolute;
 	  right: 0;
 	  top:0;
-	  overflow: hidden;
 	  @media screen and (max-width: 768px){
+	  	overflow: hidden;
   		flex-direction: column;
   		align-items: flex-end;
 	  	margin-top:40px
@@ -141,9 +141,10 @@ export default {
 			  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 		  }
 	  }
-	}
+	} 
 	.nav-links{
 		cursor: pointer;
+		overflow: hidden;
 		&:hover{
 			height: 100%;
 		}

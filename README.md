@@ -4,6 +4,7 @@ https://medium.com/@rksmith369/how-to-deploy-mern-stack-app-on-aws-ec2-with-ssl-
 
 ssh -i "advanceac.pem" ubuntu@ec2-3-19-43-117.us-east-2.compute.amazonaws.com
 /var/www/advanceac
+sudo npm install
 rebuild client
 pm2 restart
 sudo service nginx stop && sudo service nginx start
