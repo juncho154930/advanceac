@@ -2,10 +2,12 @@
   <div class="home">
     <img src="../assets/logo.png">
     <div class="service-text">
-      <h1>{{ msg }}</h1>
-      <h2>Services all of Dallas area</h2>
+      <h1>Advance A/C Refrigeration & Heating Co.</h1>
+      <p>Installation | Repairs | Maintenance</p>
+      <p>Services for Air Condition | Refrigeration | Heating | Ice Maker</p>
+      <p>Services all of Dallas area</p>
       <p>Schedule Service Today: (214) 909-3191</p>
-      <Form />
+      <!-- <Form /> -->
     </div>
   </div>
 </template>
@@ -20,13 +22,15 @@ export default {
   },
   data() {
     return {
-      msg: 'Advance A/C',
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+p{
+  font-size: 22px;
+}
 .service-text{
   display: flex;
   flex-direction: column;
