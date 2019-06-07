@@ -53,7 +53,7 @@ export default {
 	background-color: transparent;
 }
 .brand{
-	color:#2b2b2b;
+	color:#fff;
 	font-size:24px;
 }
 .navSection
