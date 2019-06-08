@@ -6,9 +6,15 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      name: "home",
+      name: "Home",
       path: "/",
-      component: () => import("@/views/HomePage")
+      component: () => import("@/views/Home")
+    },
+    {
+    	name: "AccountRegister",
+    	path: "/register",
+    	component: () => import("@/views/Register")
     }
-  ]
+  ],
+  mode:'history',
 });

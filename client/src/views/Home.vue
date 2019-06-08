@@ -34,17 +34,18 @@
         <a :href="'//' + kickstarter.link" target="_blank" class="button button--purple">{{ kickstarter.name }}</a>
       </div>
     </div>
-    
+    <TestForm />
   </div>
+
 </template>
 
 <script>
-import Form from "@/components/Form";
+import TestForm from "@/components/TestForm";
 
 export default {
-  name: "HomePage",
+  name: "Home",
   components: {
-    Form,
+    TestForm,
   },
   data() {
     return {

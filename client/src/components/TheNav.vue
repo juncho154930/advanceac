@@ -22,7 +22,7 @@
 			    		<router-link tag="a" :to="{ name: 'home' }" class="button">Log In</router-link>
 			    	</li>
 			    	<li>
-			    		<router-link tag="a" :to="{ name: 'home' }" class="button">Sign Up</router-link>
+			    		<router-link tag="a" :to="{ name: 'AccountRegister' }" class="button">Sign Up</router-link>
 			    	</li>
 	    		</ul>
 	    	</li>
@@ -32,10 +32,12 @@
 </template>
 <script>
 export default {
-	name: "Nav",
-	data: {
-		account: {
-			open: false,
+	name: "TheNav",
+	data() {
+		return{
+			account: {
+				open: false,
+			}
 		}
 	}
 };
@@ -53,7 +55,7 @@ export default {
 	background-color: transparent;
 }
 .brand{
-	color:#fff;
+	color:#d4d4d4;
 	font-size:24px;
 }
 .navSection

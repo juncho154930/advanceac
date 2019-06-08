@@ -23,7 +23,7 @@
             <div class="select">
               <select v-model="form.inquiry_type">
                 <option disabled value="">Nothing selected</option>
-                <option v-for="option in options.inquiry" :value="option.value">
+                <option v-for="option in options.inquiry" :key="option.value" :value="option.value">
                   {{ option.text }}
                 </option>
               </select>
@@ -92,7 +92,7 @@
         <div class="box">
           <ul>          
             Results:
-            <li v-for="(item, k) in form">
+            <li v-for="(item, k) in form" :key="k">
               <div v-show="item && item.length != 0"><strong>{{ k }}:</strong> {{ item }}</div>
             </li>
           </ul>
@@ -119,7 +119,7 @@ export default {
         inquiry:[
           { value: 'test1', text: 'testtext1' },
           { value: 'test2', text: 'testtext2' },
-          { value: 'test2', text: 'testtext2' },
+          { value: 'test3', text: 'testtext3' },
         ],
       },
       msg: 'Advance A/C',

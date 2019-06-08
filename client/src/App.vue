@@ -1,22 +1,20 @@
 <template>
   <div id="app">
-    <Nav />
+    <TheNav />
     <router-view/>
-    <Footer />
+    <TheFooter />
   </div>
 </template>
 
 <script>
-import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
+import TheNav from '@/components/TheNav';
+import TheFooter from '@/components/TheFooter';
 
 export default {
   name: 'App',
   components: {
-    Nav,
-    Footer,
-  },
-  created() {
+    TheNav,
+    TheFooter,
   },
 };
 </script>
